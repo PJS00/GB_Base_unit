@@ -10,54 +10,53 @@
 // [“1234”, “1567”, “-2”, “computer science”] → [“-2”]
 // [“Russia”, “Denmark”, “Kazan”] → []
 
-// string[] str = ["Helllo", "World", "no", "2", "Hi", "Russia", "Kazan", ":-)", "1234", "567"];
+string[] str = ["Helllo", "World", "no", "2", "Hi", "Russia", "Kazan", ":-)", "1234", "567"];
+System.Console.WriteLine("Исходный массив: ");
+foreach (string s in str)
+{
+    System.Console.Write(s + " ");
+}
+System.Console.WriteLine("\n");
+System.Console.WriteLine("Новый массив: ");
+foreach (string s in str)
+{
+    if (s.Length <= 3)
+    {
+        System.Console.Write(s + " ");
+    }
+}
 
-// // string[] str2 = new string[str.Length];
-// // for (int i = 0; i < str2.length; i++)
-// // {
-// //     if (str[i].Length <= 3)
-// //     {
-// //         System.Console.WriteLine(str[i]);
-// //     }
-// // }
-// foreach (string w in str)
+// Неправильное решение
+// string[] MyToStringArray(string str)
 // {
-//     if (w.Length <= 3)
+//     string[] words = new string[str.Length];
+//     foreach (string w in words)
 //     {
-//         System.Console.Write($"{w} ");
+//         System.Console.WriteLine($"{w} ");
 //     }
+//     // return words;
 // }
 
-string[] MyToStringArray(string str)
-{
-    string[] words = new string[str.Length];
-    foreach (string w in words)
-    {
-        System.Console.WriteLine($"{w} ");
-    }
-    // return words;
-}
+// void PrintArray(string[] array)
+// {
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         System.Console.Write(array[i] + " ");
+//     }
+//     System.Console.WriteLine();
+// }
 
-void PrintArray(string[] array)
-{
-    for (int i = 0; i < array.Length; i++)
-    {
-        System.Console.Write(array[i] + " ");
-    }
-    System.Console.WriteLine();
-}
+// string[] CreateNewArray(string[] array)
+// {
+//     string[] array2 = new string[array.Length];
+//     for (int i = 0; i < array.Length / 2; i++)
+//     {
+//         array2[i].Length <= 3;
+//     }
+//     return array2;
+// }
 
-string[] CreateNewArray(string[] array)
-{
-    string[] array2 = new string[array.Length];
-    for (int i = 0; i < array.Length / 2; i++)
-    {
-        array2[i].Length <= 3;
-    }
-    return array2;
-}
-
-System.Console.Write("Напишите несколько слов через пробел: ");
-string str = Console.ReadLine();
-PrintArray(MyToStringArray(str));
-PrintArray(CreateNewArray(str));
+// System.Console.Write("Напишите несколько слов через пробел: ");
+// string str = Console.ReadLine();
+// PrintArray(MyToStringArray(str));
+// PrintArray(CreateNewArray(str));
