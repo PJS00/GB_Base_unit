@@ -28,18 +28,49 @@
 // }
 
 // Второе решение
+// string[] MyToStringArray(string str)
+// {
+//     string[] words = str.Split(' ');
+//     // PrintArray(words);
+//     string[] result = new string[0];
+//     foreach (string w in words)
+//     {
+//         if(w.Length <= 3)
+//         {
+//             System.Console.Write($"{w} ");
+//         }
+//     }
+//     return result;
+// }
+
+// void PrintArray(string[] array)
+// {
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         System.Console.Write(array[i] + " ");
+//     }
+//     System.Console.WriteLine();
+// }
+
+// System.Console.Write("Напишите несколько слов через пробел: ");
+// string str = Console.ReadLine();
+// PrintArray(MyToStringArray(str));
+
+// Третье решение
 string[] MyToStringArray(string str)
 {
     string[] words = str.Split(' ');
-    // PrintArray(words);
-    string[] result = new string[0];
-    foreach (string w in words)
+    string[] result = new string[words.Length];
+    int j = 0;
+    for (int i = 0; i < words.Length; i++)
     {
-        if(w.Length <= 3)
+        if (words[i].Length <= 3)
         {
-            System.Console.Write($"{w} ");
+            result[j] = words[i];
+            j++;
         }
     }
+    Array.Resize(ref result, j);
     return result;
 }
 
@@ -52,17 +83,6 @@ void PrintArray(string[] array)
     System.Console.WriteLine();
 }
 
-// string[] CreateNewArray(string[] array)
-// {
-//     string[] array2 = new string[array.Length];
-//     for (int i = 0; i < array.Length / 2; i++)
-//     {
-//         array2[i].Length <= 3;
-//     }
-//     return array2;
-// }
-
 System.Console.Write("Напишите несколько слов через пробел: ");
 string str = Console.ReadLine();
 PrintArray(MyToStringArray(str));
-// PrintArray(CreateNewArray(str));

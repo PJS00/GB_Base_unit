@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GB_Base_unit")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f36aa8717549c46bfee2373ca18a0cbf40fcf5fd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8618642042a1d94ddae72c21bef1dee40bfe5265")]
 [assembly: System.Reflection.AssemblyProductAttribute("GB_Base_unit")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GB_Base_unit")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
