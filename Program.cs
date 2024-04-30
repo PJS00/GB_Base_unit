@@ -9,3 +9,21 @@
 // [“Hello”, “2”, “world”, “:-)”] → [“2”, “:-)”]
 // [“1234”, “1567”, “-2”, “computer science”] → [“-2”]
 // [“Russia”, “Denmark”, “Kazan”] → []
+
+string[] str = ["Helllo", "World", "no", "2", "Hi", "Russia", "Kazan", ":-)", "1234", "567"];
+
+// string[] str2 = new string[str.Length];
+// for (int i = 0; i < str2.length; i++)
+// {
+//     if (str[i].Length <= 3)
+//     {
+//         System.Console.WriteLine(str[i]);
+//     }
+// }
+foreach (string w in str)
+{
+    if (w.Length <= 3)
+    {
+        System.Console.Write($"{w} ");
+    }
+}

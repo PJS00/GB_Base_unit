@@ -1,0 +1,15 @@
+D:\PJS\GBDev\GB_Base_unit\obj\Debug\net8.0\GB_Base_unit.GeneratedMSBuildEditorConfig.editorconfig
+D:\PJS\GBDev\GB_Base_unit\obj\Debug\net8.0\GB_Base_unit.AssemblyInfoInputs.cache
+D:\PJS\GBDev\GB_Base_unit\obj\Debug\net8.0\GB_Base_unit.AssemblyInfo.cs
+D:\PJS\GBDev\GB_Base_unit\obj\Debug\net8.0\GB_Base_unit.csproj.CoreCompileInputs.cache
+D:\PJS\GBDev\GB_Base_unit\obj\Debug\net8.0\GB_Base_unit.sourcelink.json
+D:\PJS\GBDev\GB_Base_unit\bin\Debug\net8.0\GB_Base_unit.exe
+D:\PJS\GBDev\GB_Base_unit\bin\Debug\net8.0\GB_Base_unit.deps.json
+D:\PJS\GBDev\GB_Base_unit\bin\Debug\net8.0\GB_Base_unit.runtimeconfig.json
+D:\PJS\GBDev\GB_Base_unit\bin\Debug\net8.0\GB_Base_unit.dll
+D:\PJS\GBDev\GB_Base_unit\bin\Debug\net8.0\GB_Base_unit.pdb
+D:\PJS\GBDev\GB_Base_unit\obj\Debug\net8.0\GB_Base_unit.dll
+D:\PJS\GBDev\GB_Base_unit\obj\Debug\net8.0\refint\GB_Base_unit.dll
+D:\PJS\GBDev\GB_Base_unit\obj\Debug\net8.0\GB_Base_unit.pdb
+D:\PJS\GBDev\GB_Base_unit\obj\Debug\net8.0\GB_Base_unit.genruntimeconfig.cache
+D:\PJS\GBDev\GB_Base_unit\obj\Debug\net8.0\ref\GB_Base_unit.dll
