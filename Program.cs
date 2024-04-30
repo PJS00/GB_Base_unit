@@ -10,41 +10,47 @@
 // [“1234”, “1567”, “-2”, “computer science”] → [“-2”]
 // [“Russia”, “Denmark”, “Kazan”] → []
 
-string[] str = ["Helllo", "World", "no", "2", "Hi", "Russia", "Kazan", ":-)", "1234", "567"];
-System.Console.WriteLine("Исходный массив: ");
-foreach (string s in str)
+// Первое решение
+// string[] str = ["Helllo", "World", "no", "2", "Hi", "Russia", "Kazan", ":-)", "1234", "567"];
+// System.Console.WriteLine("Исходный массив: ");
+// foreach (string s in str)
+// {
+//     System.Console.Write(s + " ");
+// }
+// System.Console.WriteLine("\n");
+// System.Console.WriteLine("Новый массив: ");
+// foreach (string s in str)
+// {
+//     if (s.Length <= 3)
+//     {
+//         System.Console.Write(s + " ");
+//     }
+// }
+
+// Второе решение
+string[] MyToStringArray(string str)
 {
-    System.Console.Write(s + " ");
-}
-System.Console.WriteLine("\n");
-System.Console.WriteLine("Новый массив: ");
-foreach (string s in str)
-{
-    if (s.Length <= 3)
+    string[] words = str.Split(' ');
+    // PrintArray(words);
+    string[] result = new string[0];
+    foreach (string w in words)
     {
-        System.Console.Write(s + " ");
+        if(w.Length <= 3)
+        {
+            System.Console.Write($"{w} ");
+        }
     }
+    return result;
 }
 
-// Неправильное решение
-// string[] MyToStringArray(string str)
-// {
-//     string[] words = new string[str.Length];
-//     foreach (string w in words)
-//     {
-//         System.Console.WriteLine($"{w} ");
-//     }
-//     // return words;
-// }
-
-// void PrintArray(string[] array)
-// {
-//     for (int i = 0; i < array.Length; i++)
-//     {
-//         System.Console.Write(array[i] + " ");
-//     }
-//     System.Console.WriteLine();
-// }
+void PrintArray(string[] array)
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+        System.Console.Write(array[i] + " ");
+    }
+    System.Console.WriteLine();
+}
 
 // string[] CreateNewArray(string[] array)
 // {
@@ -56,7 +62,7 @@ foreach (string s in str)
 //     return array2;
 // }
 
-// System.Console.Write("Напишите несколько слов через пробел: ");
-// string str = Console.ReadLine();
-// PrintArray(MyToStringArray(str));
+System.Console.Write("Напишите несколько слов через пробел: ");
+string str = Console.ReadLine();
+PrintArray(MyToStringArray(str));
 // PrintArray(CreateNewArray(str));
